@@ -1,0 +1,15 @@
+void main() {
+  
+  //fahrenheit to celsius
+  
+  var far = (113-32)*(5/9);
+  var c = far; 
+
+  print("Calcius = $c");
+  
+  //celsius to fahrenheit
+  
+ var cells = 45*(5/9)+32 ; 
+  
+  print("Farenheit = $cells") ;
+}
