@@ -1,0 +1,61 @@
+void main() {
+  
+  //fahrenheit to celsius
+  
+  var far = (113-32)*(5/9);
+  var c = far; 
+
+  print("Calcius = $c");
+  
+  //celsius to fahrenheit
+  
+ var cells = 45*(5/9)+32 ; 
+  
+  print("Farenheit = $cells") ;
+
+  print(" ");
+  
+  //For loop
+  
+  //increament
+  
+  var i ;
+  
+  for(i=0; i<5; i++) {
+    
+  print(i);
+    
+  }
+  
+     print(" ");
+
+//decrement 
+  
+  
+  for(i=4; i>1; i--){
+   
+  print(i);
+    
+  }
+  
+
+   print(" ");
+  
+  
+  //Lists Name
+  
+  var name =["Sadi", "Kamran", "Jashim", "Toiyob"];
+  
+  print(name [0]);
+  print(name [1]);
+  print(name [2]);
+  print(name [3]);
+  
+   print(" ");
+  
+     print("That's all our today's class. Gratitude goes to Minhajul Islam sir.");
+  
+}
+
+
+
