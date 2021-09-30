@@ -1,0 +1,39 @@
+void main() {
+ 
+Profile p1 = Profile();  
+p1.designation="CEO";
+p1.name="Kamran";
+p1.salary="30K";
+p1.phone="12354464";
+
+  
+Profile p2 = Profile(); 
+p2.name="Jashim";
+p2.designation="COO";
+p2.salary="40K";
+p2.phone="1233444464"; 
+  
+
+p1.displayInof();
+  
+    print('\n');
+  
+  p2.displayInof();
+}
+
+ class Profile {
+  var name;
+  var designation;
+  var salary;
+  var phone;
+  
+  displayInof (){
+    print(name);
+   print(designation);
+    print(salary);
+    print(phone);
+  }
+   
+ }
+ 
+
