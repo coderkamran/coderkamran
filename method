@@ -1,0 +1,50 @@
+void main() {
+  
+plus();
+min();
+intu();
+div();
+}
+
+//plus method
+
+void plus(){
+ 
+  int a = 20;
+  int b = 10;
+  var c= a+b;
+  
+  print("A+B= $c"); 
+ 
+}
+//min method
+
+void min(){
+   int a = 60;
+  int b = 20;
+   var c= a-b;
+  
+   print("A-B= $c"); 
+}
+
+//intu method
+
+void intu(){
+   int a = 5;
+  int b = 15;
+    var c= a*b;
+   print("A*B= $c"); 
+}
+
+//div method
+
+void div(){
+  int a = 2700;
+  int b = 30;
+  var c = a/b;
+  
+   print("A/B= $c"); 
+}
+
+
+ 
