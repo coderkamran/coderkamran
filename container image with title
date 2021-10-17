@@ -1,0 +1,68 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main(List<String> args) {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("EvoMax IT"),
+        ),
+        
+body: ListView(
+  children: [
+    customContainer(),
+    customContainer(),
+
+    
+  ],
+),
+    
+      ),
+      );
+  }
+
+  Container customContainer() {
+    return Container(
+    child: Column(
+      children: [
+ 
+           Container(
+            height: 400,
+            width: double.infinity,
+        
+            decoration: BoxDecoration(
+   borderRadius: BorderRadius.circular(50),
+              
+              image: DecorationImage(
+            
+                image:  AssetImage('assets/evomaxit-office.jpg'),
+                fit: BoxFit.contain,
+                colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.darken)
+              
+              )
+            
+            ),
+            child: Center(child: Text("Welcome to My Home", 
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
+            
+            )), 
+           ),
+       
+   
+      Text("How are you all?"),
+      Text("Good Bye"),
+      ],
+    )
+    
+  );
+  }
+}
