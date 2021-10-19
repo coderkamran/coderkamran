@@ -1,0 +1,52 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main(List<String> args) {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("EvoMax IT"),
+          centerTitle: true,
+        leading: Icon(Icons.menu),
+        ) ,
+       drawer: Drawer(
+      
+        child: ListView(
+          
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.red,
+              ),
+              child: Text('EvoMax IT'),
+            ),
+            ListTile(
+              title: const Text('App Dev'),
+              onTap: () {
+                
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Web Dev'),
+              onTap: () {
+                
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
+    ));
+  }
+}
