@@ -12,7 +12,7 @@ class Pizza extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-            leading: Icon(Icons.local_pizza),
+            leading: Icon(Icons.bike_scooter),
             title: Text("Chicken Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("15\$"),
@@ -20,7 +20,7 @@ class Pizza extends StatelessWidget {
 
            ListTile(
             leading: CircleAvatar(
-              child: Image.asset('/assets/pizza-tomato.jpg')
+            backgroundImage: AssetImage('assets/mrkk.jpg')
             ),
             title: Text("Tomato Pizza"),
             subtitle: Text("Its feel tasty"),
@@ -30,7 +30,7 @@ class Pizza extends StatelessWidget {
 
            ListTile(
             leading: CircleAvatar(
-              backgroundImage: AssetImage('/assets/pizza-tomato.jpg')
+              backgroundImage: AssetImage('assets/mrkk.jpg')
             ),
             title: Text("Mutton Pizza"),
             subtitle: Text("Its feel tasty"),
@@ -38,34 +38,44 @@ class Pizza extends StatelessWidget {
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage('assets/mrkk.jpg')
+            ),
             title: Text("Bief Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("35\$"),
           ),
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage('assets/mrkk.jpg')
+            ),
             title: Text("Milk Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("25\$"),
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage('assets/mrkk.jpg')
+            ),
             title: Text("Rice Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("15\$"),
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage('assets/mrkk.jpg')
+            ),
             title: Text("Vegetable Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("10\$"),
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+              backgroundImage: AssetImage('assets/evomaxit-office.jpg')
+            ),
             title: Text("Chicken Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("15\$"),
