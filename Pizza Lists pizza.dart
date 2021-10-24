@@ -11,19 +11,13 @@ class Pizza extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          ListTile(
-            leading: Icon(Icons.bike_scooter),
-            title: Text("Chicken Pizza"),
-            subtitle: Text("Its feel tasty"),
-            trailing: Text("15\$"),
-          ),
 
            ListTile(
             leading: CircleAvatar(
             backgroundImage: AssetImage('assets/mrkk.jpg')
             ),
-            title: Text("Tomato Pizza"),
-            subtitle: Text("Its feel tasty"),
+            title: Text("Tomato Pizza", textAlign: TextAlign.center ),
+            subtitle: Text("Its feel tasty",  textAlign: TextAlign.center ),
             trailing: Text("10\$"),
           ),
 
