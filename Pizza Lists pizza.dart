@@ -82,28 +82,36 @@ class Pizza extends StatelessWidget {
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+               backgroundImage: AssetImage('assets/ragdoll-cat.jpg')
+            ),
             title: Text("Mutton Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("15\$"),
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+               backgroundImage: AssetImage('assets/persiancat.jpg')
+            ),
             title: Text("Bief Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("15\$"),
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+               backgroundImage: AssetImage('assets/pizza-tomato.jpg')
+            ),
             title: Text("Palok Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("15\$"),
           ),
 
            ListTile(
-            leading: CircleAvatar(),
+            leading: CircleAvatar(
+               backgroundImage: AssetImage('assets/evomaxit-office.jpg')
+            ),
             title: Text("Eggs Pizza"),
             subtitle: Text("Its feel tasty"),
             trailing: Text("15\$"),
