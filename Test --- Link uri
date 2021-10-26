@@ -1,0 +1,47 @@
+Link(
+              uri: Uri.parse('https://androidride.com'),
+              //target: LinkTarget.self,
+              builder: (context, followLink) {
+                return RichText(
+                  text: TextSpan(children: [
+                    TextSpan(
+                      text: 'Click here: ',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                      ),
+                    ),
+                    TextSpan(
+                      text: 'AndroidRide',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 21,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = followLink,
+                    ),
+                  ]),
+                );
+              }),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Link(
+          uri: Uri.parse('/second'),
+          builder: (context, followLink) {
+            return InkWell(
+              onTap: followLink,
+              child: Text(
+                'Go to Second Screen',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            );
+          },
+        ),
