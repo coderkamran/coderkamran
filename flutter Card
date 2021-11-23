@@ -1,0 +1,8 @@
+Card(
+      elevation: 10,
+      shadowColor: Colors.blueAccent,
+      child: SizedBox(
+      height: 250,
+        width: 250,
+      )      
+        );  
