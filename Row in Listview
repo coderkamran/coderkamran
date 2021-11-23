@@ -1,0 +1,123 @@
+ListView(
+children: [
+Center(
+  child:   Row(
+  
+    children: [
+  
+  Container(
+  
+              height: 124,
+  
+              width: 124,
+  
+
+              decoration: BoxDecoration(
+  
+  
+  
+                image: DecorationImage(
+  
+                  
+  
+                  image: const AssetImage('assets/kkcrop.png'),
+  
+                  fit: BoxFit.cover,
+  
+                  
+  
+                )
+  
+              ),
+  
+            ),
+  
+ 
+  Padding(
+  
+    padding: const EdgeInsets.all(8.0),
+  
+    child:   Container(
+  
+    
+  
+                height: 124,
+  
+    
+  
+                width: 124,
+  
+
+                decoration: BoxDecoration(
+ 
+                  image: DecorationImage(
+  
+
+                    image: const AssetImage('assets/mrkk.jpg'),
+  
+    
+  
+                    fit: BoxFit.cover,
+  
+
+                  )
+  
+    
+  
+                ),
+  
+    
+  
+              ),
+  
+  ),
+  
+
+  Padding(
+  
+    padding: const EdgeInsets.all(8.0),
+  
+    child:   Container(
+  
+                height: 124,
+ 
+                width: 124,
+  
+                decoration: BoxDecoration(
+  
+ 
+  
+                  image: DecorationImage(
+  
+ 
+                    image: const AssetImage('assets/noodles.jpg'),
+  
+    
+  
+                    fit: BoxFit.cover,
+  
+ 
+  
+                  )
+  
+    
+  
+                ),
+  
+    
+  
+              ),
+  
+  ),
+  
+  
+  ]
+  
+  ),
+  
+)
+
+
+],
+
+      ),
