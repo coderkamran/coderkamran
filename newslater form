@@ -1,0 +1,215 @@
+import 'dart:html';
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+
+class Newslater extends StatelessWidget {
+ final _formKey = GlobalKey<FormState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Newslater'),
+      ),
+      body: Container(
+  width: double.infinity,
+        decoration: BoxDecoration(
+          color: Colors.teal
+        ),
+      child: 
+      Form(
+        key: _formKey,
+        child:  Column(
+          
+        children: [
+
+Center(
+  child:   Padding(
+    padding: const EdgeInsets.all(15.0),
+    child: Container(
+    
+      child: Text('Let Us Build Your Brand', style: TextStyle(
+    
+        fontSize: 26, fontWeight: FontWeight.bold,
+    color: Colors.white
+      ),
+      
+      ),
+    
+    ),
+  ),
+),
+
+
+
+
+
+
+          // Padding(
+          //   padding: const EdgeInsets.all(10.0),
+          //   child: TextField(
+          //      keyboardType: TextInputType.emailAddress,
+          //     decoration: InputDecoration(
+          //       label: Text('Email'),
+          //       hintText: 'Enter your Email',
+          //        prefix: Icon(Icons.person),
+          //       suffix: Icon(Icons.search),
+          //       filled: true,
+          //       fillColor: Colors.white,
+          //       border: OutlineInputBorder(
+          //         borderRadius: BorderRadius.circular(10)
+          //       )
+          //     ),
+          //   ),
+          // ),
+
+
+          //  Padding(
+          //    padding: const EdgeInsets.all(10.0),
+          //    child: TextField(
+          //      keyboardType: TextInputType.number,
+          //     decoration: InputDecoration(
+          //       label: Text('Pass'),
+          //       hintText: 'Enter your Password',
+          //       prefix: Icon(Icons.person),
+          //       suffix: Icon(Icons.search),
+          //       filled: true,
+          //       fillColor: Colors.white,
+          //        border: OutlineInputBorder(
+          //         borderRadius: BorderRadius.circular(10)
+          //       )
+          //     ),
+          // ),
+          //  ),
+
+
+  // Padding(
+  //            padding: const EdgeInsets.all(10.0),
+  //            child: TextField(
+  //              maxLines: 10,
+  //              keyboardType: TextInputType.number,
+  //             decoration: InputDecoration(
+  //               label: Text('Opinion'),
+  //               hintText: 'Enter your Password',
+  //               prefix: Icon(Icons.person),
+  //               suffix: Icon(Icons.search),
+  //               filled: true,
+  //               fillColor: Colors.white,
+  //                border: OutlineInputBorder(
+  //                 borderRadius: BorderRadius.circular(10)
+  //               )
+  //             ),
+  //         ),
+  //          ),
+
+
+
+  Padding(
+    padding: const EdgeInsets.all(8.0),
+    child: TextFormField(
+        keyboardType: TextInputType.name,
+ decoration: InputDecoration(
+                  label: Text('Your Name'),
+                  hintText: 'Enter your Name',
+                  prefix: Icon(Icons.person),
+                  suffix: Icon(Icons.edit),
+                  filled: true,
+                  fillColor: Colors.white,
+                   border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10)
+                  )
+                ),
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please complete the form';
+                return null;
+              }}
+            ),
+  ),
+
+
+
+Padding(
+  padding: const EdgeInsets.all(8.0),
+  child:   TextFormField(
+   
+    keyboardType: TextInputType.emailAddress,
+   decoration: InputDecoration(
+  
+                  label: Text('Email'),
+  
+                  hintText: 'Enter your Email',
+                  
+  
+                  prefix: Icon(Icons.person),
+  
+                  suffix: Icon(Icons.edit),
+  
+                  filled: true,
+  
+                  fillColor: Colors.white,
+  
+                   border: OutlineInputBorder(
+  
+                    borderRadius: BorderRadius.circular(10)
+  
+                  )
+  
+                ),
+  
+              validator: (value) {
+  
+                if (value == null || value.isEmpty) {
+  
+                  return 'Please complete the form';
+  
+                return null;
+  
+              }}
+  
+            ),
+),
+
+Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16.0),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                minimumSize: Size(180, 60),
+                textStyle: TextStyle(
+                  fontSize: 35,
+                ),
+                primary: Colors.orange,
+                onPrimary: Colors.black
+              ),
+              
+              onPressed: () {
+                if (_formKey.currentState!.validate()) {
+                  
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Thanks for your interest')),
+                  );
+                }
+              },
+              child: const Text('Submit'),
+            ),
+          ),
+
+
+
+
+
+
+
+        ],
+      ),
+      
+      
+      )
+      
+      
+      
+    ));
+  }
+}
